@@ -9,7 +9,7 @@ pipeline {
           }
         }
 
-        stage('"build app"') {
+        stage('build') {
           agent {
             docker {
               image 'gradle:jdk11'
